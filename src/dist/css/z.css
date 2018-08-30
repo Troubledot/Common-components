@@ -1,0 +1,144 @@
+/*
+* @Author: troubledot
+* @Date:   2018-08-30 14:55:12
+* @Last Modified by:   troubledot
+* @Last Modified time: 2018-08-30 16:29:35
+*/
+.wrap{
+	padding: 20px;
+	.item{
+		border: 1px solid #ccc;
+		padding: 20px;
+		h1{
+			font-size: 20px;
+			color: #333;
+			font-weight: bold;
+			padding: 5px 0;
+		}
+		button{
+			padding: 1px 6px;
+			font-size: 14px;
+		}
+		&.tree{
+			overflow: hidden;
+			#tree{
+				margin: 10px;
+			}
+			.l{
+				width: 400px;
+				float: left;
+			}
+			.r{
+				margin-left: 410px;
+			}
+		}
+		h2{
+			font-size: 18px;
+			padding: 5px 0;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+}
+
+/*强改ztree样式*/
+
+
+.ztree-main.ztree li span.button {
+    background-image: url("../img/zTreeStandard2.png");
+}
+
+.ztree-main.ztree li a.curSelectedNode {
+    padding: 1px 3px 0 0;
+    font-size: 14px;
+    color: #3c83bc;
+    background-color: #fff;
+    border: none;
+    height: 17px;
+}
+
+.ztree-main.ztree li span.button.ico_docu {
+    width: 12px;
+    height: 14px;
+    margin-right: 6px;
+    background-position: -48px -72px;
+    vertical-align: top;
+}
+
+.ztree-main.ztree li span.button.ico_open {
+    width: 32px;
+    height: 14px;
+    margin-right: 5px;
+    background-position: 0 -72px;
+    vertical-align: top;
+}
+
+.ztree-main.ztree li span.button.ico_close {
+    width: 32px;
+    height: 14px;
+    margin-right: 5px;
+    background-position: 0 -72px;
+    vertical-align: top;
+}
+
+.ztree-main.ztree li span.button.center_open {
+    height: 29px;
+    width: 15px;
+    background-position: -61px -57px;
+}
+
+.ztree-main.ztree li span.button.bottom_open {
+    height: 29px;
+    width: 15px;
+    background-position: -61px -57px;
+}
+
+.ztree-main.ztree li ul {
+    margin: 0;
+    padding: 0 0 0 31px;
+}
+
+.ztree-main.ztree li span.button.center_close {
+    height: 29px;
+    width: 15px;
+    background-position: -61px -92px;
+}
+
+.ztree-main.ztree li span.button.bottom_close {
+    height: 29px;
+    width: 15px;
+    background-position: -61px -92px;
+}
+
+.ztree-main.ztree li a {
+    vertical-align: bottom;
+    font-size: 14px;
+    color: #444;
+    .node_name{
+        width: 60px;
+        display: inline-block;
+        white-space: nowrap;
+        vertical-align: top;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.ztree-main.ztree li span.button.add{
+    background-position: 0 -113px;
+}
+.ztree-main.ztree li span.button.add.addable{
+    background-position: 0 -95px;
+}
+.ztree-main.ztree li span.button.edit{
+    background-position: -15px -113px;
+}
+.ztree-main.ztree li span.button.edit.editable{
+    background-position: -15px -95px;
+}
+.ztree-main.ztree li span.button.remove{
+    background-position: -32px -113px;
+}
+.ztree-main.ztree li span.button.remove.removeable{
+    background-position: -32px -95px;
+}

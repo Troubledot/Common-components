@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+
+<head> @include('./header.html', { "title": "3.1多维分析" })
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="zt-topcon">
+            <div class="top-nav">
+                <div class="wid-fixed fn-clear">
+                    <div class="top-data">2018年5月8日 星期二</div>
+                    <ul class="top-navmsg">
+                        <li>
+                            <i class="back-home"></i><span>返回首页</span>
+                        </li>
+                        <li>
+                            <i class="user-name"></i><span>蔡耀耀</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-logocon">
+                <div class="wid-fixed">
+                    <i class="logo-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="zt-botcon">
+            <div class="wid-fixed">
+                <div class="zt-content fn-clear">
+                    <div class="tree-lfcon">
+                        <div class="tree-titlecon fn-clear">
+                            <div class="lftitle-txt">
+                                <i></i><span>资源目录</span>
+                            </div>
+                            <button class="manage-btn" type="button">管理</button>
+                        </div>
+                        <div class="ztree-main ztree" id="tree">
+                        </div>
+                    </div>
+                    <div class="rtmain-con">
+                        <!-- 右边内容开始 -->
+                        <div class="mul-analysis">
+                            <div class="mul-analysis-title fn-clear">
+                                <div class="title">指标规则
+                                </div>
+                                <button class="mul-adds">新增</button>
+                            </div>
+                            <div class="analysis-wrap">
+                                <div class="mul-analysis-class">
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-class"></i>
+                                                <span>按类型</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-class">
+                                            <ul class="fn-clear">
+                                                <li class="item">行政许可</li>
+                                                <li class="item">行政处罚</li>
+                                                <li class="item">行政强制</li>
+                                                <li class="item">行政征收</li>
+                                                <li class="item">行政给付</li>
+                                                <li class="item">行政检查</li>
+                                                <li class="item">行政确认</li>
+                                                <li class="item">行政奖励</li>
+                                                <li class="item">行政裁决</li>
+                                                <li class="item">其他类别</li>
+                                                <li class="item">更多类别1</li>
+                                                <li class="item">更多类别2</li>
+                                                <li class="item">更多类别3</li>
+                                                <li class="item">更多类别4</li>
+                                                <li class="item">更多类别5</li>
+                                                <li class="item">更多类别6</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 按部门 -->
+                                    <div class="mul-by-some clickable single">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-party"></i>
+                                                <span>按部门</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-local">
+                                            <ul class="fn-clear">
+                                                <li class="item">外交部</li>
+                                                <li class="item">国防部</li>
+                                                <li class="item">改革发展委</li>
+                                                <li class="item">教育部</li>
+                                                <li class="item">科技部</li>
+                                                <li class="item">国家民委</li>
+                                                <li class="item">公安部</li>
+                                                <li class="item">监察部</li>
+                                                <li class="item">民政部</li>
+                                                <li class="item">司法部</li>
+                                                <li class="item">更多部门1</li>
+                                                <li class="item">更多部门2</li>
+                                                <li class="item">更多部门3</li>
+                                                <li class="item">更多部门4</li>
+                                                <li class="item">更多部门5</li>
+                                                <li class="item">更多部门6</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 按地区 -->
+                                    <div class="mul-by-some clickable single">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-region gray-icon-gov"></i>
+                                                <span>按地区</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-local">
+                                            <ul class="fn-clear by-area">
+                                                <li class="item">全国</li>
+                                                <li class="province">
+                                                    <span>省级</span>
+                                                    <div class="provincelist">
+                                                        <dl>
+                                                        </dl>
+                                                        <span class="enterbtn">
+                                                        确认选择
+                                                    </span>
+                                                    </div>
+                                                </li>
+                                                <li class="city">
+                                                    <span>城市</span>
+                                                    <div class="citylist">
+                                                        <dl>
+                                                        </dl>
+                                                        <span class="enterbtn">
+                                                        确认选择
+                                                    </span>
+                                                    </div>
+                                                </li>
+                                                <li class="county">
+                                                    <span>区县</span>
+                                                    <div class="countylist">
+                                                        <dl>
+                                                        </dl>
+                                                        <span class="enterbtn">
+                                                        确认选择
+                                                    </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                                <li class="item">更多11</li>
+                                                <li class="item">更多21</li>
+                                                <li class="item">更多31</li>
+                                                <li class="item">更多41</li>
+                                                <li class="item">更多51</li>
+                                                <li class="item">更多11</li>
+                                                <li class="item">更多22</li>
+                                                <li class="item">更多32</li>
+                                                <li class="item">更多42</li>
+                                                <li class="item">更多52</li>
+                                                <li class="item">更多12</li>
+                                                <li class="item">更多22</li>
+                                                <li class="item">更多32</li>
+                                                <li class="item">更多42</li>
+                                                <li class="item">更多52</li>
+                                                <li class="item">更多13</li>
+                                                <li class="item">更多23</li>
+                                                <li class="item">更多33</li>
+                                                <li class="item">更多43</li>
+                                                <li class="item">更多53</li>
+                                                <li class="item">更多13</li>
+                                                <li class="item">更多23</li>
+                                                <li class="item">更多33</li>
+                                                <li class="item">更多43</li>
+                                                <li class="item">更多53</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 替代数据 -->
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-gov"></i>
+                                                <span>行使层级</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-gov">
+                                            <ul class="fn-clear">
+                                                <li class="item">国家级</li>
+                                                <li class="item">省级</li>
+                                                <li class="item">市级</li>
+                                                <li class="item">县级</li>
+                                                <li class="item">镇（乡、街道）级</li>
+                                                <li class="item">村（社区）级</li>
+                                                <li class="item">更多1</li>
+                                                <li class="item">更多2</li>
+                                                <li class="item">更多3</li>
+                                                <li class="item">更多4</li>
+                                                <li class="item">更多5</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                            <div class="mul-btn">
+                                                <span>更多</span>
+                                                <i class="mul-more-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mul-by-some clickable mul-clear-b">
+                                        <div class="classify">
+                                            <div class="classify-con">
+                                                <i class="by-date"></i>
+                                                <span>事项状态</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents use-state">
+                                            <ul class="fn-clear">
+                                                <li class="item">在用</li>
+                                                <li class="item">暂停</li>
+                                                <li class="item">取消</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="openbtn">
+                                    <span>展开筛选</span><i></i>
+                                </div>
+                            </div>
+                            <div class="mul-data-info fn-clear">
+                                <div class="mul-name">数据源</div>
+                                <ul class="mul-data-con fn-clear">
+                                </ul>
+                            </div>
+                            <table class="mul-data-table">
+                                <thead>
+                                    <tr>
+                                        <th width="20%"></th>
+                                        <th width="10%">2017年2月</th>
+                                        <th width="10%">2017年3月</th>
+                                        <th width="10%">2017年4月</th>
+                                        <th width="10%">2017年5月</th>
+                                        <th width="10%">2017年6月</th>
+                                        <th width="10%">2017年7月</th>
+                                        <th width="10%">2017年8月</th>
+                                        <th width="10%">2017年9月</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>东城区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>西城区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>朝阳区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>石景山区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>海淀区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>丰台区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>门头沟区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>房山区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>通州区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>顺义区</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="mul-button-bc">
+                                <button>保存</button>
+                            </div>
+                        </div>
+                        <!-- 右边内容结束 -->
+                    </div>
+                </div>
+                <div class="zt-footer fn-clear">
+                    <i class="footer-icon"></i>
+                    <div class="footer-rtcon">
+                        <ul class="footer-our about-ours fn-clear">
+                            <li>版权声明</li>
+                            <li class="border-list"><i class="lf-border"></i>关于我们<i class="rt-border"></i>
+                            </li>
+                            <li>加入收藏</li>
+                        </ul>
+                        <ul class="footer-our fn-clear">
+                            <li>版权所有：<span>XXXXXXXXXX</span></li>
+                            <li>京备ICPXXXXXXXX号</li>
+                        </ul>
+                        <ul class="footer-our fn-clear">
+                            <li>联系电话：<span>0201-XXXXXXXX</span></li>
+                            <li>联系人：<span>XXX</span></li>
+                            <li>XXX电子政务办公室</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-saved saved-layer" style="display: none">
+        <div class="popup-bg"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <div class="popup-lftitle">
+                    <div class="txt-con">
+                        <h3>保存至</h3>
+                        <p>Save to</p>
+                    </div>
+                    <i></i>
+                </div>
+                <i class="popup-closed mul-layer-close"></i>
+            </div>
+            <div class="popup-main">
+                <div class="input-namecon">
+                    <span>请输入名称：</span>
+                    <input type="text" name="">
+                </div>
+                <div class="saved-place">
+                    <p>请选择保存位置</p>
+                    <div class="ztree-main ztree saved-ztree" id="tree2">
+                    </div>
+                </div>
+            </div>
+            <div class="popup-btncon">
+                <button class="normal-btn white-btn mul-layer-close" type="button">取消</button>
+                <button class="normal-btn saved-btn mul-layer-close" type="button">保存</button>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="dist/js/lib/ztree/js/jquery.ztree.all.js"></script>
+    <script src="dist/js/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="dist/js/base.js"></script>
+    <script>
+    $(function() {
+        $(".toptab-listcon li").click(function() {
+            $(this).addClass("active-tabtop").siblings().removeClass("active-tabtop");
+        });
+        var setting = {
+            view: {
+                selectedMulti: true
+            },
+            edit: {
+                enable: false,
+                editNameSelectAll: true,
+                showRemoveBtn: false,
+                showRenameBtn: false
+            },
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            callback: {
+                onExpand: zTreeOnExpand,
+                onClick: zTreeOnClick
+            }
+        };
+        var zNodes = [
+            { id: 1, pId: 0, name: "系统资源", open: true, editable: false },
+            { id: 11, pId: 1, name: "资源目录", open: true, addable: false },
+            { id: 111, pId: 11, name: "事项", open: true, removeable: false },
+            { id: 1111, pId: 111, name: "自然人事项", removeable: false, editable: false, addable: false },
+            { id: 1112, pId: 111, name: "政务服务事项" },
+            { id: 112, pId: 11, name: "办件", open: true },
+            { id: 1121, pId: 112, name: "平台访问最多数据" },
+            { id: 1122, pId: 112, name: "政务服务事项" },
+            { id: 12, pId: 1, name: "专题构建", isParent: true },
+            { id: 121, pId: 12, name: "事项" },
+            { id: 1211, pId: 121, name: "自然人事项" },
+            { id: 1212, pId: 121, name: "政务服务事项" },
+            { id: 122, pId: 12, name: "办件" },
+            { id: 1221, pId: 122, name: "平台访问最多数据" },
+            { id: 1222, pId: 122, name: "政务服务事项" },
+            { id: 13, pId: 1, name: "多维分析", isParent: true },
+            { id: 131, pId: 13, name: "事项" },
+            { id: 1311, pId: 131, name: "自然人事项" },
+            { id: 1312, pId: 131, name: "政务服务事项" },
+            { id: 132, pId: 13, name: "办件" },
+            { id: 1321, pId: 132, name: "平台访问最多数据" },
+            { id: 1322, pId: 132, name: "政务服务事项" },
+            { id: 14, pId: 1, name: "数据分析", isParent: true },
+            { id: 141, pId: 14, name: "事项" },
+            { id: 1411, pId: 141, name: "自然人事项" },
+            { id: 1412, pId: 141, name: "政务服务事项" },
+            { id: 142, pId: 14, name: "办件" },
+            { id: 1421, pId: 142, name: "平台访问最多数据" },
+            { id: 1422, pId: 142, name: "政务服务事项" },
+            { id: 15, pId: 1, name: "网页发布", isParent: true },
+            { id: 151, pId: 15, name: "事项" },
+            { id: 1511, pId: 151, name: "自然人事项" },
+            { id: 1512, pId: 151, name: "政务服务事项" },
+            { id: 152, pId: 15, name: "办件" },
+            { id: 1521, pId: 152, name: "平台访问最多数据" },
+            { id: 1522, pId: 152, name: "政务服务事项" },
+
+            { id: 2, pId: 0, name: "个人空间" },
+            { id: 21, pId: 2, name: "资源目录", open: true },
+            { id: 211, pId: 21, name: "事项", open: true },
+            { id: 2111, pId: 211, name: "自然人事项" },
+            { id: 2112, pId: 211, name: "政务服务事项" },
+            { id: 212, pId: 21, name: "办件", open: true },
+            { id: 2121, pId: 212, name: "平台访问最多数据" },
+            { id: 2122, pId: 212, name: "政务服务事项" },
+            { id: 22, pId: 2, name: "专题构建", isParent: true },
+            { id: 221, pId: 22, name: "事项" },
+            { id: 2211, pId: 221, name: "自然人事项" },
+            { id: 2212, pId: 221, name: "政务服务事项" },
+            { id: 222, pId: 22, name: "办件" },
+            { id: 2221, pId: 222, name: "平台访问最多数据" },
+            { id: 2222, pId: 222, name: "政务服务事项" },
+            { id: 23, pId: 2, name: "多维分析", isParent: true },
+            { id: 231, pId: 23, name: "事项" },
+            { id: 2311, pId: 231, name: "自然人事项" },
+            { id: 2312, pId: 231, name: "政务服务事项" },
+            { id: 232, pId: 23, name: "办件" },
+            { id: 2321, pId: 232, name: "平台访问最多数据" },
+            { id: 2322, pId: 232, name: "政务服务事项" },
+            { id: 24, pId: 2, name: "数据分析", isParent: true },
+            { id: 241, pId: 24, name: "事项" },
+            { id: 2411, pId: 241, name: "自然人事项" },
+            { id: 2412, pId: 241, name: "政务服务事项" },
+            { id: 242, pId: 24, name: "办件" },
+            { id: 2421, pId: 242, name: "平台访问最多数据" },
+            { id: 2422, pId: 242, name: "政务服务事项" },
+            { id: 25, pId: 2, name: "网页发布", isParent: true },
+            { id: 251, pId: 25, name: "事项" },
+            { id: 2511, pId: 251, name: "自然人事项" },
+            { id: 2512, pId: 251, name: "政务服务事项" },
+            { id: 252, pId: 25, name: "办件" },
+            { id: 2521, pId: 252, name: "平台访问最多数据" },
+            { id: 2522, pId: 252, name: "政务服务事项" },
+        ];
+
+        var log, className = "dark";
+
+
+        //新增按钮添加
+
+        function addnewBtn(nodeList) {
+            var newCount = 1;
+            var zTree = $.fn.zTree.getZTreeObj("tree");
+            // var nodeList = zTree.transformToArray(zTree.getNodes());
+            nodeList.forEach(function(element, index) {
+                var sObj = $("#" + element.tId + "_span");
+                if (zTree.setting.edit.enable) {
+                    var addable = (element.addable == undefined)||(element.addable == true) ? "addable" : "";
+                    var editable = (element.editable == undefined)||(element.editable == true) ? "editable" : "";
+                    var removeable = (element.removeable == undefined)||(element.removeable == true) ? "removeable" : "";
+                    if (element.editNameFlag || $("#addBtn_" + element.tId).length > 0 || $("#remove_" + element.tId).length > 0 || $("#edit_" + element.tId).length > 0) return;
+                    var addStr = "<span class='button add "+addable+"' id='addBtn_" + element.tId +
+                        "' title='add node' onfocus='this.blur();'></span>";
+                    var editStr = "<span class='button edit "+editable+"' id='edit_" + element.tId +
+                        "' title='rename' onfocus='this.blur();'></span>";
+                    var delStr = "<span class='button remove "+removeable+"' id='remove_" + element.tId +
+                        "' title='remove' onfocus='this.blur();'></span>";
+
+                    function allstr() {
+                        var allstr;
+                        if (element.isParent) {
+                            allstr = addStr + editStr + delStr;
+                        } else {
+                            allstr = editStr + delStr;
+                        }
+                        return allstr;
+                    }
+
+                    sObj.after(allstr());
+                    if ((element.addable == undefined)||(element.addable == true)) {
+                        var btn = $("#addBtn_" + element.tId);
+                    } 
+                    if (btn) btn.bind("click", function() {
+                       var newnode = zTree.addNodes(element, { id: (100 + newCount), pId: element.id, name: "new node" + (newCount++),isParent: true},true);
+                        var tId = newnode[0].tId;
+                        var nStr = "<span class='button add addable' id='addBtn_"+ tId +"' title='add node' onfocus='this.blur();'></span><span class='button edit editable' id='edit_" + tId +"' title='rename' onfocus='this.blur();'></span><span class='button remove removeable' id='remove_" + tId +"' title='remove' onfocus='this.blur();'></span>";
+
+                        var nobj = $("#"+tId+"_span").after(nStr);
+                        var nbtn = $("#addBtn_" + tId); 
+                        nbtn.bind('click', function() {
+                            /* Act on the event */
+                            console.log(newnode[0].id)
+                            console.log(newnode)
+                            zTree.addNodes(newnode[0], { id: (1000 + newCount), pId: newnode[0].id, name: "new node" + (newCount++),isParent: true},true);
+                        });
+                        return false;
+                    });
+                } else {
+                    return
+                }
+            });
+        }
+
+        //编辑方法
+        var operateNode;
+        function zTreeOnClick(event, treeId, treeNode) {
+            operateNode = treeNode;
+        };
+        // 编辑节点
+        $(document).on('click', '.button.edit.editable', function(event) {
+            var treeObj = $.fn.zTree.getZTreeObj("tree");
+            treeObj.editName(operateNode);
+        });
+        // 删除节点
+        $(document).on('click', '.button.remove.removeable', function(event) {
+            var treeObj = $.fn.zTree.getZTreeObj("tree");
+            treeObj.removeNode(operateNode);
+        });
+        function zTreeOnExpand(event, treeId, treeNode) {
+            function filter(node) {
+                return node;
+            }
+            var treeObj = $.fn.zTree.getZTreeObj("tree");
+            var nodes = treeObj.getNodesByFilter(filter,false,treeNode); // 查找节点集合
+            console.log(nodes)
+            addnewBtn(nodes);
+        };
+        var newCount = 1;
+        function selectAll() {
+            var zTree = $.fn.zTree.getZTreeObj("tree");
+            zTree.setting.edit.editNameSelectAll = $("#selectAll").attr("checked");
+        }
+        $(document).ready(function() {
+            $.fn.zTree.init($("#tree"), setting, zNodes);
+        });
+        $(".ztree-main").niceScroll({
+            cursorcolor: "#dfdfdf",
+            cursorwidth: "6px", // 滚动条的宽度，单位：便素,
+            cursorheight: "10px",
+            cursorborderradius: "6px", // 滚动条圆角（像素）
+            autohidemode: 'false',
+            background: "#fff", // 轨道的背景颜色
+            railpadding: {
+                top: 0,
+                right: 0,
+                left: 0,
+                bottom: 0
+            }
+        });
+
+        // 弹窗
+        $('.mul-button-bc button').click(function() {
+            $('.saved-layer').show();
+        })
+        $('.mul-layer-close').click(function() {
+            $('.saved-layer').hide();
+        })
+        var setting2 = {
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            }
+        };
+        var zNodest = [
+            { id: 1, pId: 0, name: "系统资源", open: true },
+            { id: 11, pId: 1, name: "资源目录", open: true },
+            { id: 111, pId: 11, name: "事项" },
+            { id: 112, pId: 11, name: "办件" },
+            { id: 12, pId: 1, name: "专题构建", isParent: true },
+            { id: 121, pId: 12, name: "事项" },
+            { id: 122, pId: 12, name: "办件" },
+            { id: 13, pId: 1, name: "多维分析", isParent: true },
+            { id: 131, pId: 13, name: "事项" },
+            { id: 132, pId: 13, name: "办件" },
+            { id: 14, pId: 1, name: "数据分析", isParent: true },
+            { id: 141, pId: 14, name: "事项" },
+            { id: 142, pId: 14, name: "办件" },
+            { id: 15, pId: 1, name: "网页发布", isParent: true },
+            { id: 151, pId: 15, name: "事项" },
+            { id: 152, pId: 15, name: "办件" },
+
+            { id: 2, pId: 0, name: "个人空间" },
+            { id: 21, pId: 2, name: "资源目录", open: true },
+            { id: 211, pId: 21, name: "事项" },
+            { id: 212, pId: 21, name: "办件" },
+            { id: 22, pId: 2, name: "专题构建", isParent: true },
+            { id: 221, pId: 22, name: "事项" },
+            { id: 222, pId: 22, name: "办件" },
+            { id: 23, pId: 2, name: "多维分析", isParent: true },
+            { id: 231, pId: 23, name: "事项" },
+            { id: 232, pId: 23, name: "办件" },
+            { id: 24, pId: 2, name: "数据分析", isParent: true },
+            { id: 241, pId: 24, name: "事项" },
+            { id: 242, pId: 24, name: "办件" },
+            { id: 25, pId: 2, name: "网页发布", isParent: true },
+            { id: 251, pId: 25, name: "事项" },
+            { id: 252, pId: 25, name: "办件" },
+        ];
+
+        $(document).ready(function() {
+            $.fn.zTree.init($("#tree2"), setting2, zNodest);
+
+
+        });
+        $(".saved-ztree").niceScroll({
+            cursorcolor: "#dfdfdf",
+            cursorwidth: "6px", // 滚动条的宽度，单位：便素,
+            cursorheight: "2px",
+            cursorborderradius: "6px", // 滚动条圆角（像素）
+            autohidemode: 'false',
+            // background: "#fff", // 轨道的背景颜色
+            railpadding: {
+                top: 0,
+                right: 0,
+                left: 0,
+                bottom: 0
+            }
+        });
+
+        // 展开收起筛选
+        $(".mul-by-some").eq(3).nextAll('.mul-by-some').hide();
+        $(document).on('click', '.openbtn', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).find('span').text("展开筛选");
+                $(".mul-by-some").eq(3).nextAll('.mul-by-some').hide();
+            } else {
+                $(this).addClass('active');
+                $(this).find('span').text("收起筛选");
+                $(".mul-by-some").show();
+            }
+        });
+        // 点击编辑
+        $(document).on('click', '.manage-btn', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            var zTree = $.fn.zTree.getZTreeObj("tree");
+            var nodeList = zTree.transformToArray(zTree.getNodes());
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).text('编辑');
+                zTree.setEditable(false)
+
+            } else {
+                $(this).addClass('active');
+                $(this).text('完成');
+                zTree.setEditable(true)
+                addnewBtn(nodeList);
+            }
+        });
+
+    })
+    </script>
+</body>
+
+</html>

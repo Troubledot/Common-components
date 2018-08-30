@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head> @include('./header.html', { "title": "Index" })
+</head>
+<body>
+    <div class="wrap">
+			<div class="item tree">
+				<div class="l">
+					<h1>树组件</h1>
+					<div class="content">
+						<button class="manage-btn">编辑</button>
+						<div class="ztree-main ztree" id="tree"></div>
+					</div>
+				</div>
+				<div class="r">
+					<h2>说明</h2>
+					<p>本来想写点东西说明下的，后来发现没啥必要。</p>
+					<p>这个东西感觉是为了这次的需求硬拼出来的一个东西，并不够健壮，其实没能解决真正的痛点，如果刚好要有人跟我需求一样，可以当作参考一下。。</p>
+				</div>
+			</div>
+        </div>
+    </div>
+    <script src="dist/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="dist/js/lib/ztree/js/jquery.ztree.all.js"></script>
+    <script src="dist/js/mytree.js"></script>
+</body>
+</html>
